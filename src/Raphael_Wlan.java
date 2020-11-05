@@ -5,8 +5,6 @@ import javafx.scene.text.Text;
 
 public class Raphael_Wlan extends GaugeBase {
 
-    private int width = 50;
-    private int height = 50;
     private int value = 0;
 
     public void redraw()
@@ -15,8 +13,8 @@ public class Raphael_Wlan extends GaugeBase {
         Rectangle border = new Rectangle();
         border.setX(0);
         border.setY(0);
-        border.setWidth(width);
-        border.setHeight(height);
+        border.setWidth(380);
+        border.setHeight(250);
         border.setArcWidth(10);
         border.setArcHeight(10);
         border.setStrokeWidth(3);
@@ -25,8 +23,8 @@ public class Raphael_Wlan extends GaugeBase {
 
         Text t = new Text("Schreib eine Zahl zwischen 0 und 100");
         t.setFont(Font.font ("Verdana", 15));
-        t.setLayoutX(100);
-        t.setLayoutY(490);
+        t.setLayoutX(50);
+        t.setLayoutY(235);
         t.setFill(Color.BLACK);
 
         int i = 15;
@@ -160,13 +158,6 @@ public class Raphael_Wlan extends GaugeBase {
 
             }
         }
-    }
-
-    public void init(int width, int height)
-    {
-        this.width = width;
-        this.height = height;
-        this.redraw();
     }
 
     public void setValue(int v)

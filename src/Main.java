@@ -38,8 +38,6 @@ public class Main extends Application
 
             }
         };
-
-        gbr.init(500,500);
         gbs.setValue(45);
         gbl.setValue(45);
         gbr.setValue(45);
