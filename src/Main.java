@@ -3,7 +3,6 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
@@ -59,5 +58,4 @@ public class Main extends Application
         //Displaying the contents of a scene
         stage.show();
     }
-
 }
