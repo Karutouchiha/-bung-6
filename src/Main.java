@@ -10,7 +10,9 @@ import javafx.stage.Stage;
 
 public class Main extends Application
 {
-    GaugeBase gb = new GaugeBase();
+    Sarah_Battery gbs = new Sarah_Battery();
+    Lara_Battery gbl = new Lara_Battery();
+    Raphael_Wlan gbr = new Raphael_Wlan();
     TextField txtValue = new TextField();
 
     public static void main(String[] args) {
@@ -26,7 +28,9 @@ public class Main extends Application
 
                 try {
                     int v = Integer.parseInt(txtValue.getText());
-                    gb.setValue(v);
+                    gbs.setValue(v);
+                    gbl.setValue(v);
+                    gbr.setValue(v);
                 }
                 catch(Exception ex) {
                     System.out.println("Input Exception!");
@@ -35,8 +39,10 @@ public class Main extends Application
             }
         };
 
-        gb.init(500, 500);
-        gb.setValue(45);
+        gbr.init(500,500);
+        gbs.setValue(45);
+        gbl.setValue(45);
+        gbr.setValue(45);
 
         Button btnValue = new Button();
         btnValue.setText("New Value");
@@ -45,7 +51,7 @@ public class Main extends Application
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10, 50, 50, 50));
         vBox.setSpacing(20);
-        vBox.getChildren().addAll(gb, txtValue, btnValue);
+        vBox.getChildren().addAll(gbs, gbl, gbr, txtValue, btnValue);
 
         //Creating a Scene
         Scene scene = new Scene(vBox);

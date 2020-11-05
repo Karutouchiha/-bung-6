@@ -6,8 +6,8 @@ import javafx.scene.text.Text;
 
 public class Lara_Battery extends GaugeBase
 {
-    private int width = 50;
-    private int height = 50;
+    private int width = 255;
+    private int height = 80;
     private int value = 0;
 
     public void redraw()
@@ -157,7 +157,6 @@ public class Lara_Battery extends GaugeBase
             }
         }
     }
-
     @Override
     public void setValue(int v)
     {

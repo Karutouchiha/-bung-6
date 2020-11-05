@@ -11,6 +11,7 @@ public class Raphael_Wlan extends GaugeBase {
 
     public void redraw()
     {
+        this.getChildren().clear();
         Rectangle border = new Rectangle();
         border.setX(0);
         border.setY(0);
@@ -161,16 +162,12 @@ public class Raphael_Wlan extends GaugeBase {
         }
     }
 
-
-
     public void init(int width, int height)
     {
         this.width = width;
         this.height = height;
         this.redraw();
     }
-
-
 
     public void setValue(int v)
     {
